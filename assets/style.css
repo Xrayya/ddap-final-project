@@ -1,0 +1,7 @@
+* {
+  font-family: 'Inter', sans-serif;
+}
+
+header, section, footer {
+  padding: 0px 64px;
+}
