@@ -22,6 +22,17 @@
     <script src="assets/tailwind.config.js"></script>
 
     <link href="assets/style.css" rel="stylesheet" />
+    <style type="text/tailwindcss">
+      @layer components {
+        .card {
+          background-color: theme('colors.white');
+          border-radius: theme('borderRadius.lg');
+          padding: theme('spacing.6');
+          box-shadow: theme('boxShadow.xl');
+          border: solid 5px red;
+        }
+      }
+    </style>
   </head>
 
   <body>
@@ -61,6 +72,7 @@
         <img src="assets/image/New Project.png" alt="my photo" class="w-full" />
       </div>
     </section>
+
     <!-- about -->
     <section id="about" class="py-16">
       <h3 class="text-teal-500 text-4xl font-bold mb-4">About Me</h3>
@@ -234,10 +246,46 @@
           <span>5 month</span>
         </div>
       </div>
-      <div class="grid grid-cols-8 gap-4"></div>
+      <div class="w-full grid grid-cols-6 gap-4">
+        <div class="soft-skill col-start-2 card">
+          <img
+            src="assets/image/Scrum board-amico.svg"
+            alt="stable-under-pressure"
+          />
+          <span>Stable under pressure</span>
+        </div>
+        <div class="soft-skill">
+          <img
+            src="assets/image/Time management-amico 1.svg"
+            alt="time-management"
+          />
+          <span>Time Management</span>
+        </div>
+        <div class="soft-skill">
+          <img
+            src="assets/image/Problem solving-amico.svg"
+            alt="problem-solving"
+          />
+          <span>Problem Solving</span>
+        </div>
+        <div class="soft-skill">
+          <img src="assets/image/Team work-amico.svg" alt="team-work" />
+          <span>Team Work</span>
+        </div>
+      </div>
     </section>
+
     <!-- portfolio -->
-    <section id="portfolio"></section>
+    <section
+      id="portfolio"
+      class="bg-slate-200 py-16 flex flex-col items-center gap-16"
+    >
+      <h3 class="text-4xl text-teal-500 font-bold">Portfolio</h3>
+      <div class="flex flex-col items-center">
+        <h4 class="text-3xl">Latest Project</h4>
+        <div class="grid grid-cols-12">;</div>
+      </div>
+    </section>
     <!-- contact -->
     <section id="contact"></section>
     <!-- footer -->
