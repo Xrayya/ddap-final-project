@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+header,
+section,
+footer {
+  @apply px-16;
+}
+
+.social-media {
+  @apply w-12 h-12 rounded-full border border-black flex justify-center items-center;
+}
+
+.social-media svg {
+  @apply w-6;
+}
+
+.programming-skill {
+  @apply col-span-2 flex flex-col items-center gap-2;
+}
+
+.programming-skill > svg {
+  @apply w-full;
+}
+
+.programming-skill > span {
+  @apply text-xl;
+}
+
+.soft-skill {
+  @apply flex flex-col items-center gap-2;
+}
+
+.soft-skill > img {
+  @apply w-full;
+}
+
+.soft-skill > span {
+  @apply text-xl text-center;
+}

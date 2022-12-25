@@ -1,29 +1,23 @@
 {
   "name": "final-project",
   "version": "1.0.0",
-  "description": "portfolio website to fulfill a DDAP task",
-  "main": "package.json",
+  "description": "DDAP Final Project",
+  "main": "index.js",
   "scripts": {
-    "test": "echo test"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Xrayya/ddap-final-project.git"
   },
-  "keywords": [
-    "tailwindcss",
-    "portfolio",
-    "ddap"
-  ],
-  "author": "Azhary",
-  "license": "MIT",
+  "keywords": [],
+  "author": "Azhary Munir Abdillah",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Xrayya/ddap-final-project/issues"
   },
   "homepage": "https://github.com/Xrayya/ddap-final-project#readme",
   "devDependencies": {
-    "autoprefixer": "^10.4.13",
-    "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4"
   }
 }

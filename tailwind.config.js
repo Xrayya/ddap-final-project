@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [],
+  content: ['index.html'],
   theme: {
-    fontSize: {
+    fontFamily: {
+      inter: ['Inter', 'sans-serif']
+    },
+    extend: {
       sm: ['14px', '24px'],
       base: ['16px', '24px'],
       lg: ['18px', '24px'],
@@ -12,9 +15,6 @@ module.exports = {
       '4xl': ['40px', '48px'],
       '5xl': ['48px', '64px'],
       '6xl': ['56px', '72px'],
-    },
-    extend: {
-      colors: {},
     },
   },
   plugins: [],
