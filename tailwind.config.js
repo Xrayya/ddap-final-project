@@ -2,8 +2,13 @@
 module.exports = {
   content: ['index.html'],
   theme: {
+    screens: {
+      phone: '0px',
+      tablet: '768px',
+      desktop: '1024px',
+    },
     fontFamily: {
-      inter: ['Inter', 'sans-serif']
+      inter: ['Inter', 'sans-serif'],
     },
     extend: {
       sm: ['14px', '24px'],
@@ -18,4 +23,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

@@ -9,7 +9,7 @@ footer {
 }
 
 .social-media {
-  @apply w-12 h-12 rounded-full border border-black flex justify-center items-center;
+  @apply w-12 h-12 rounded-full border flex justify-center items-center;
 }
 
 .social-media svg {
@@ -17,7 +17,7 @@ footer {
 }
 
 .programming-skill {
-  @apply col-span-2 flex flex-col items-center gap-2;
+  @apply phone:col-span-6 tablet:col-span-3 desktop:col-span-2 flex flex-col items-center gap-2;
 }
 
 .programming-skill > svg {
@@ -38,4 +38,20 @@ footer {
 
 .soft-skill > span {
   @apply text-xl text-center;
+}
+
+.project {
+  @apply col-span-4;
+}
+
+.project img {
+  @apply w-full rounded-2xl mb-2;
+}
+
+.project h5 {
+  @apply text-2xl font-bold mb-2;
+}
+
+.project > p {
+  @apply text-base text-slate-500;
 }
