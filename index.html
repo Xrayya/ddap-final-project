@@ -23,12 +23,25 @@
   <body class="font-inter">
     <!-- navbar -->
     <header
-      class="fixed w-full py-6 grid grid-cols-12 phone:gap-2 tablet:gap-4 backdrop-blur-md transition-all delay-50"
+      class="fixed w-full py-5 grid grid-cols-12 phone:gap-2 tablet:gap-4 backdrop-blur-md transition-all delay-50"
     >
       <h1 class="col-start-1 col-end-2">
         <a href="#" class="text-teal-500 font-bold">azharymunir</a>
       </h1>
-      <nav class="col-start-6 col-span-7 flex flex-row justify-between">
+      <button
+        id="hamburger"
+        type="button"
+        name="hamburger"
+        class="desktop:hidden col-start-12"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav
+        class="phone:hidden desktop:flex desktop:col-start-6 desktop:col-span-7 desktop:flex-row desktop:justify-between desktop:scale-y-100"
+      >
         <a href="#about" class="hover:text-teal-500">About Me</a>
         <a href="#skills" class="hover:text-teal-500">Skills</a>
         <a href="#portfolio" class="hover:text-teal-500">Portfolio</a>

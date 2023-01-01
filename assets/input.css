@@ -57,5 +57,50 @@ footer {
 }
 
 .header-scrolled {
-  @apply bg-white/30 shadow-lg shadow-slate-200;
+  @apply bg-white/70 shadow-lg shadow-slate-200;
+}
+
+#hamburger {
+  position: relative;
+  background-color: transparent;
+}
+
+#hamburger > span {
+  width: 26px;
+  height: 2px;
+  background-color: black;
+
+  display: inline-block;
+
+  position: absolute;
+  right: 0px;
+  transition: 300ms ease-in-out;
+}
+
+#hamburger > span:nth-child(1) {
+  top: 1px;
+}
+
+#hamburger > span:nth-child(4) {
+  bottom: 0px;
+}
+
+#hamburger.active > span:nth-child(1) {
+  transform: scale(0) translateY(8px);
+}
+
+#hamburger.active > span:nth-child(2) {
+  transform: rotate(45deg);
+}
+
+#hamburger.active > span:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+#hamburger.active > span:nth-child(4) {
+  transform: scale(0) translateY(-8px);
+}
+
+nav.active {
+  @apply absolute flex top-full flex-col rounded-lg py-2 bg-white shadow-md shadow-slate-500 phone:col-start-10 phone:col-span-3 tablet:col-start-11 tablet:col-span-2 w-full items-center;
 }
