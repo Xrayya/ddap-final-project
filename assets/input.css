@@ -102,5 +102,5 @@ footer {
 }
 
 nav.active {
-  @apply absolute flex top-full flex-col rounded-lg py-2 bg-white shadow-md shadow-slate-500 phone:col-start-10 phone:col-span-3 tablet:col-start-11 tablet:col-span-2 w-full items-center;
+  @apply absolute flex top-full flex-col rounded-lg py-2 bg-white shadow-md shadow-slate-500 phone:col-start-10 phone:col-span-5 tablet:col-start-11 tablet:col-span-2 w-full items-center;
 }

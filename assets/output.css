@@ -1034,7 +1034,7 @@ nav.active {
 
 @media (min-width: 0px) {
   nav.active {
-    grid-column: span 3 / span 3;
+    grid-column: span 5 / span 5;
     grid-column-start: 10;
   }
 }
