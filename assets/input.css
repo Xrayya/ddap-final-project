@@ -5,7 +5,7 @@
 header,
 section,
 footer {
-  @apply px-16;
+  @apply phone:px-8 tablet:px-16;
 }
 
 .social-media {
@@ -29,7 +29,7 @@ footer {
 }
 
 .soft-skill {
-  @apply flex flex-col items-center gap-2;
+  @apply flex flex-col items-center gap-2 tablet:col-span-2 desktop:col-span-1;
 }
 
 .soft-skill > img {
@@ -41,7 +41,7 @@ footer {
 }
 
 .project {
-  @apply col-span-4;
+  @apply phone:col-span-12 tablet:col-span-6 desktop:col-span-4;
 }
 
 .project img {
@@ -54,4 +54,8 @@ footer {
 
 .project > p {
   @apply text-base text-slate-500;
+}
+
+.header-scrolled {
+  @apply bg-white/30 shadow-lg shadow-slate-200;
 }

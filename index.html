@@ -22,7 +22,9 @@
 
   <body class="font-inter">
     <!-- navbar -->
-    <header class="w-full py-6 grid grid-cols-12 gap-4">
+    <header
+      class="fixed w-full py-6 grid grid-cols-12 phone:gap-2 tablet:gap-4 backdrop-blur-md transition-all delay-50"
+    >
       <h1 class="col-start-1 col-end-2">
         <a href="#" class="text-teal-500 font-bold">azharymunir</a>
       </h1>
@@ -37,10 +39,10 @@
     <!-- hero -->
     <section
       id="hero"
-      class="py-16 grid grid-cols-12 gap-x-4 gap-y-8 desktop:grid-rows-1 desktop:grid-flow-row-dense"
+      class="pt-[136px] pb-16 grid grid-cols-12 phone:gap-x-2 tablet:gap-x-4 gap-y-8 desktop:grid-rows-1 desktop:grid-flow-row-dense"
     >
       <div
-        class="border-4 border-teal-500 rounded-full overflow-hidden bg-slate-400 tablet:col-start-3 tablet:col-span-8 desktop:col-start-9 desktop:col-span-4"
+        class="border-4 border-teal-500 rounded-full overflow-hidden bg-slate-400 col-span-12 tablet:col-start-3 tablet:col-span-8 desktop:col-start-9 desktop:col-span-4"
       >
         <img src="assets/image/New Project.png" alt="my photo" class="w-full" />
       </div>
@@ -48,16 +50,18 @@
         class="col-start-1 col-span-12 desktop:col-span-6 flex flex-col justify-center"
       >
         <h2>
-          <span class="text-2xl text-teal-500 font-medium">
+          <span class="text-lg tablet:text-2xl text-teal-500 font-medium">
             Hi, everyone! My name is
           </span>
           <br />
-          <span class="text-6xl font-bold">Azhary Munir Abdillah</span>
+          <span class="text-4xl tablet:text-6xl font-bold"
+            >Azhary Munir Abdillah</span
+          >
         </h2>
-        <p class="text-3xl font-semibold">
+        <p class="text-xl tablet:text-3xl font-semibold">
           Collage Student at Brawijaya University
         </p>
-        <p class="text-2xl">
+        <p class="text-lg tablet:text-2xl">
           Tech Enthusiac | Information System collage student
         </p>
       </div>
@@ -89,7 +93,7 @@
             “Since there is nothing so well worth having as friends, never lose
             a chance to make them.” – Francesco Guicciardini
           </p>
-          <div class="flex gap-4">
+          <div class="flex phone:gap-2 tablet:gap-4">
             <a
               href="https://instagram.com/nur.al_azhr"
               target="_blank"
@@ -164,7 +168,7 @@
       class="bg-slate-200 py-16 flex flex-col items-center gap-16"
     >
       <h3 class="text-4xl text-teal-500 font-bold">Skills</h3>
-      <div class="grid grid-cols-12 gap-x-4 gap-y-8">
+      <div class="grid grid-cols-12 phone:gap-x-2 tablet:gap-x-4 gap-y-8">
         <div class="programming-skill">
           <svg
             role="img"
@@ -220,7 +224,9 @@
           </svg>
           <span>5 month</span>
         </div>
-        <div class="programming-skill">
+        <div
+          class="programming-skill tablet:col-start-4 desktop:col-start-auto"
+        >
           <svg
             role="img"
             class="fill-[#00599C]"
@@ -249,8 +255,10 @@
           <span>5 month</span>
         </div>
       </div>
-      <div class="w-full grid grid-cols-6 gap-4">
-        <div class="soft-skill col-start-2 card">
+      <div
+        class="w-full grid phone:grid-cols-2 tablet:grid-cols-6 phone:gap-2 tablet:gap-4"
+      >
+        <div class="soft-skill desktop:col-start-2 card">
           <img
             src="assets/image/Scrum board-amico.svg"
             alt="stable-under-pressure"
@@ -271,7 +279,7 @@
           />
           <span>Problem Solving</span>
         </div>
-        <div class="soft-skill">
+        <div class="soft-skill tablet:col-start-3 desktop:col-start-auto">
           <img src="assets/image/Team work-amico.svg" alt="team-work" />
           <span>Team Work</span>
         </div>
@@ -286,7 +294,7 @@
       <h3 class="text-4xl text-teal-500 font-bold">Portfolio</h3>
       <div class="flex flex-col items-center gap-8">
         <h4 class="text-3xl">Latest Project</h4>
-        <div class="grid grid-cols-12 gap-4">
+        <div class="grid grid-cols-12 phone:gap-x-2 tablet:gap-x-4 gap-y-8">
           <div class="project">
             <img src="assets/image/eling.jpg" alt="eling-redesign" />
             <a href="https://xrayya.github.io/eling-login-page/">
@@ -308,7 +316,7 @@
               Dicoding.
             </p>
           </div>
-          <div class="project">
+          <div class="project tablet:col-start-4 desktop:col-start-auto">
             <img src="assets/image/css-showcase.jpg" alt="css-showcase" />
             <a
               href="https://xrayya.github.io/css-flexbox-playground/"
@@ -328,51 +336,53 @@
     <!-- contact -->
     <section id="contact" class="py-16 flex flex-col items-center gap-16">
       <h3 class="text-4xl text-teal-500 font-bold">Contact Me</h3>
-      <form class="w-full grid grid-cols-12 gap-x-4">
+      <form class="w-full grid grid-cols-12 phone:gap-x-2 tablet:gap-x-4">
         <label
           for="name"
-          class="col-start-3 text-lg text-slate-500 font-bold mb-2"
+          class="desktop:col-start-3 text-lg text-slate-500 font-bold mb-2"
           >Name</label
         >
         <input
           type="text"
           name="name"
           id="name"
-          class="col-start-3 col-span-8 h-12 rounded-2xl bg-slate-200 text-base text-black px-4 mb-4"
+          class="desktop:col-start-3 desktop:col-span-8 col-span-12 h-12 rounded-2xl bg-slate-200 text-base text-black px-4 mb-4"
         />
         <label
           for="email"
-          class="col-start-3 text-lg text-slate-500 font-bold mb-2"
+          class="desktop:col-start-3 text-lg text-slate-500 font-bold mb-2"
           >Email</label
         >
         <input
           type="email"
           name="email"
           id="email"
-          class="col-start-3 col-span-8 h-12 rounded-2xl bg-slate-200 text-base text-black px-4 mb-4"
+          class="desktop:col-start-3 desktop:col-span-8 col-span-12 h-12 rounded-2xl bg-slate-200 text-base text-black px-4 mb-4"
         />
         <label
           for="message"
-          class="col-start-3 text-lg text-slate-500 font-bold mb-2"
+          class="desktop:col-start-3 text-lg text-slate-500 font-bold mb-2"
           >Message</label
         >
         <textarea
           id="message"
-          class="col-start-3 col-span-8 h-[192px] rounded-2xl bg-slate-200 text-base text-black px-4 py-4 mb-6"
+          class="desktop:col-start-3 desktop:col-span-8 col-span-12 h-[192px] rounded-2xl bg-slate-200 text-base text-black px-4 py-4 mb-6"
         ></textarea>
         <input
           type="submit"
           name="send"
           value="Send"
-          class="col-start-3 col-span-8 rounded-full bg-teal-500 text-lg font-bold text-white py-3 mb-6"
+          class="desktop:col-start-3 desktop:col-span-8 col-span-12 rounded-full bg-teal-500 text-lg font-bold text-white py-3 mb-6"
         />
       </form>
     </section>
 
     <!-- footer -->
     <footer class="w-full bg-slate-600 flex flex-col gap-4">
-      <div class="grid grid-cols-12 gap-x-4 py-16">
-        <div class="col-start-1 col-span-3">
+      <div class="grid grid-cols-12 phone:gap-x-2 tablet:gap-x-4 py-16">
+        <div
+          class="col-start-1 col-span-12 mb-8 tablet:mb-0 tablet:col-span-6 desktop:col-span-3"
+        >
           <h2 class="text-teal-500 text-5xl font-bold mb-4">
             Azhary Munir Abdillah
           </h2>
@@ -383,7 +393,7 @@
             Jl. Hos Cokroaminoto RT 008 RW 002, Kademangan, Bondowoso, Jawa
             Timur, Indonesia
           </p>
-          <div class="flex gap-4">
+          <div class="flex phone:gap-2 tablet:gap-4">
             <a
               href="https://instagram.com/nur.al_azhr"
               target="_blank"
@@ -453,7 +463,9 @@
             </a>
           </div>
         </div>
-        <div class="col-start-5 col-span-4">
+        <div
+          class="col-span-12 mb-8 tablet:mb-0 tablet:col-start-7 tablet:col-span-3 desktop:col-start-5 deskto:col-span-4"
+        >
           <h3 class="text-3xl font-bold text-white mb-4">Category</h3>
           <a href="#" class="block text-xl text-white mb-2 hover:text-teal-500"
             >Programming</a
@@ -465,7 +477,9 @@
             >Portfoliio</a
           >
         </div>
-        <div class="col-start-9 col-span-4">
+        <div
+          class="col-span-12 tablet:col-start-10 tablet:col-span-3 desktop:col-start-9 desktop:col-span-4"
+        >
           <h3 class="text-3xl font-bold text-white mb-4">Link</h3>
           <a
             href="#about"
@@ -494,8 +508,9 @@
       <div
         class="border-t border-white flex justify-center items-center pt-8 pb-8"
       >
-        <p class="text-white">Copyright (c) 2022 Azhary Munir Abdillah</p>
+        <p class="text-white">Copyright &copy; 2022 Azhary Munir Abdillah</p>
       </div>
     </footer>
+    <script src="assets/script.js"></script>
   </body>
 </html>
